@@ -1,0 +1,18 @@
+{
+  "apps": [{
+    "name": "node-serve",
+    "script": "index.js",
+    "exec_mode": "cluster",
+    "instances": 1,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "out_file": "/mnt/log/node-serve/out.log",
+    "error_file": "/mnt/log/node-serve/err.log",
+    "env": {
+      "PORT": 3300,
+      "NODE_ENV": "production"
+    }
+  }]
+}

@@ -1,0 +1,122 @@
+@import "../components/component.module.scss";
+
+.gCenter {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+.pageBody {
+  position: relative;
+
+  overflow: auto;
+  width: 100%;
+  height: calc(100vh - 200px);
+
+  .login {
+    position: relative;
+    > div {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .signupLabel,
+  .loginLabel {
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .signupLabel {
+    width: 140px;
+  }
+
+  .singupRow {
+    margin-bottom: 10px;
+  }
+
+  .signup {
+    padding: 10px;
+
+    button {
+      padding: 5px 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.defaultCss {
+  position: relative;
+
+  .search {
+    position: relative;
+  }
+  button {
+    margin-left: 5px;
+  }
+  .seachResult {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.splitLine {
+  border: 1px solid #f0f0f0;
+}
+.message {
+  width: 300px;
+}
+
+.projectDetail,
+.projectAddCss {
+  position: relative;
+
+  .projectLabel {
+    position: relative;
+    width: 80px;
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap;
+  }
+
+  select {
+    width: 100%;
+    padding: 2px 5px;
+  }
+  input {
+    width: calc(100% - 10px);
+    padding: 2px 5px;
+  }
+  textarea {
+    width: calc(100% - 20px);
+    height: 80px;
+    padding: 10px;
+    resize: none;
+  }
+
+  .project_describe {
+    min-height: 50px;
+    margin-top: -3px;
+    border: 1px solid #f0f0f0;
+    padding: 0px 5px;
+  }
+
+  .chat600 {
+    width: 600px;
+  }
+}
+
+.project_state_4 {
+  color: red;
+}
+.project_state_2 {
+  color: blue;
+}
+.project_state_3 {
+  color: green;
+}

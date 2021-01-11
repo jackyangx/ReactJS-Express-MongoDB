@@ -1,0 +1,43 @@
+ .row {
+   display: flex;
+   padding: 3px 10px;
+ }
+ .pageBody{
+   min-width: 1000px;
+   max-width: 1000px;
+ }
+
+ .col,
+ .col0,
+ .col1,
+ .col2,
+ .col3,
+ .col4,
+ .col5 {
+   padding: 3px;
+ }
+
+ .col,
+ .col1 {
+   flex: 1;
+ }
+
+ .col2 {
+   flex: 2;
+ }
+
+ .col3 {
+   flex: 3;
+ }
+
+ .col4 {
+   flex: 4;
+ }
+
+ .col5 {
+   flex: 5;
+ }
+
+ .align-center {
+   align-items: center;
+ }

@@ -1,0 +1,50 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "max-len": [1, 99, 2],
+    "semi": 0,
+    "curly": [2, "multi-line"],
+    "comma-dangle": [2, "always-multiline"],
+    "eol-last": [2, "always"],
+    "eqeqeq": [2, "allow-null"],
+    "no-shadow": 1,
+    "quotes": [
+      2,
+      "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ],
+    // dog fooding
+    "import/no-extraneous-dependencies": 0,
+    "import/unambiguous": "off"
+  },
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+
+  "overrides": [
+    {
+      "files": "scripts/**",
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
+}
