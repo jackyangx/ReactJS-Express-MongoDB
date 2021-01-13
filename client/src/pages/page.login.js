@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import styles from './pages.module.scss';
 import {userLogin} from '../actions/index';
-import Utility from '../common/Utility';
 
 class Login extends React.Component {
   constructor(props) {

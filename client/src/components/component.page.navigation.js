@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import * as allAction from '../actions';
 import styles from './component.module.scss';

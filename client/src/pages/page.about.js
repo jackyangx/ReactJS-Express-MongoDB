@@ -2,8 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import styles from './pages.module.scss';
 import * as allAction from '../actions';
-import PageNavigation from '../components/component.page.navigation';
-import Utility from '../common/Utility';
 import BasePage from './page.base';
 
 class About extends BasePage {
@@ -41,13 +39,6 @@ class About extends BasePage {
             <div>14) Project sponsor modify and delete task</div>
             <div>15) Users view project data statistics</div>
             <div>16) Online communication of project team members</div>
-            <div>17) State description：
-                        Users can choose to change the status of projects and tasks:
-                        "Not started" means that the project or task has not started
-                        ‘Processing’ means the project or task is in progress
-                        ‘Completed’ means the project or task has been completed
-                        When the time of the project or task exceeds the end date, the status will become delay.
-                        Only when the user changes the end date of the delayed project or task to the current day or later of the Microsoft system time can the status be changed to another status.</div>
           </div>
         </div>
       </div>

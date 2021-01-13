@@ -1,17 +1,17 @@
 require('@babel/core');
 require('@babel/register');
 require('@babel/polyfill');
-let cfg = require('../src/config').default;
-let mongoose = require('mongoose');
-let chai = require('chai');
-let chaiHttp = require('chai-http');
-let userService = require('../src/service/UserService').default;
-let taskService = require('../src/service/TaskService').default;
+const cfg = require('../src/config').default;
+const mongoose = require('mongoose');
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const userService = require('../src/service/UserService').default;
+const taskService = require('../src/service/TaskService').default;
 // let projectService = require('../src/service/ProjectService').default;
-let CryptoJS = require('crypto-js');
+const CryptoJS = require('crypto-js');
 process.env.PORT = 5200;
 process.env.NODE_ENV = 'test';
-let app = require('../src/main').default;
+const app = require('../src/main').default;
 
 chai.use(chaiHttp);
 chai.should();

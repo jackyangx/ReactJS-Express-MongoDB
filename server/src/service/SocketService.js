@@ -3,7 +3,6 @@ import WebSockerServer from 'ws';
 import BaseService from './BaseService';
 import UserService from './UserService';
 import TaskService from './TaskService';
-import ProjectService from './ProjectService';
 
 export default class SocketService extends BaseService {
   userNum = 0;
@@ -120,7 +119,7 @@ export default class SocketService extends BaseService {
     await this.create(doc);
     const list = await TaskService.find({project_id});
     const msgInfo = {cmdName: 'Message', data: {project_id, data: doc}};
-    
+
     if (list && list.length > 0) {
       const ownClient = this.ClientMap[list[0].own_id];
       if (ownClient) {

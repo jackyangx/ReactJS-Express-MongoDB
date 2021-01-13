@@ -41,7 +41,7 @@ export default class BaseService {
     const arr = '!@#$%^&*()_+|1234567890-=qwertyuiop[]asdfghjkl;zxcvbnm,./ABCDEFGHIJKLMNOPQRSTUVWXZY'.split('');
     let str = '';
     for (var i = 0; i < len; i++) {
-      pos = Math.round(Math.random() * (arr.length - 1));
+      const pos = Math.round(Math.random() * (arr.length - 1));
       str += arr[pos];
     }
     return str;
