@@ -1,0 +1,15 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = [
+    "nodejs",
+    "browser",
+    "mocha",
+    "mongo"
+  ]
+  plugins = ["react"]
+  style_guide = "standard"
