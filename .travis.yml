@@ -11,6 +11,6 @@ install:
 - cd server && npm install && npm install chai  chai-http @babel/core @babel/register @babel/polyfill
 - cd ../client && npm install && npm run build --prod
 before_install:
-- openssl aes-256-cbc -K $encrypted_9b2d7e19d83c_key -iv $encrypted_9b2d7e19d83c_iv
-  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_xxx_key -iv $encrypted_xxx_iv
+  -in bar_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
