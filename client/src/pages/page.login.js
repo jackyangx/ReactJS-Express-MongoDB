@@ -29,7 +29,7 @@ class Login extends React.Component {
             </div>
           </div>
           <div className="row align-center">
-            <div className={styles.loginLabel}>Password:</div>
+            <div className={styles.loginLabel}>Passwordbbbb:</div>
             <div className={styles.col}>
               <input type="password" placeholder="Please enter password" onChange={this.handleChange.bind(this, 'password')} />
             </div>
