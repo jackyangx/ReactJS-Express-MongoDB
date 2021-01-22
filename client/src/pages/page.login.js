@@ -23,7 +23,7 @@ class Login extends React.Component {
       <div className={`${styles.pageBody} ${styles.gCenter}`}>
         <div className={styles.login}>
           <div className="row align-center">
-            <div className={styles.loginLabel}>Username:</div>
+            <div className={styles.loginLabel}>Usernameaaaaaa:</div>
             <div className={styles.col}>
               <input placeholder="Please enter username" onChange={this.handleChange.bind(this, 'username')} />
             </div>
